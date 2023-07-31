@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="bg-green-900 container mx-auto flex flex-col justify-center items-center h-screen p-8 gap-11">
+        <h1 class="text-8xl text-amber-600 font-bold">BlackJack</h1>
+        <p id="playmesg" class="text-3xl text-white italic">Want to play a round?</p>
+        <p class="text-2xl text-white font-semibold" id="cards-el">Cards:</p>
+        <p class="text-2xl text-white font-semibold" id="sum-el">Sum:</p>
+       <div class="gap-3 flex flex-col">
+        <button type="submit" onclick="startGame()" class="px-20 py-3 bg-amber-600 text-green-900 rounded-lg text-xl font-medium">START GAME</button>
+        <button type="submit" onclick="newCard()" class="px-20 py-3 bg-amber-600 text-green-900 rounded-lg text-xl font-medium">NEW CARD</button>
+       </div>
+       <p id="player-el" class="text-2xl text-white font-semibold"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
